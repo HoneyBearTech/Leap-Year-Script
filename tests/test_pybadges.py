@@ -23,7 +23,7 @@ import tempfile
 import unittest
 import xmldiff.main
 
-import Leap-Year-Script
+import LeapYearScript
 from tests import image_server
 
 TEST_DIR = os.path.dirname(__file__)
@@ -47,11 +47,11 @@ class TestPybadgesBadge(unittest.TestCase):
         self._image_server.stop_server()
 
     def test_docs(self):
-        doctest.testmod(Leap-Year-Script, optionflags=doctest.ELLIPSIS)
+        doctest.testmod(LeapYearScript, optionflags=doctest.ELLIPSIS)
 
     def test_whole_link_and_left_link(self):
         with self.assertRaises(ValueError):
-            Leap-Year-Script.badge(left_text='foo',
+            LeapYearScript.badge(left_text='foo',
                            right_text='bar',
                            left_link='http://example.com/',
                            whole_link='http://example.com/')
