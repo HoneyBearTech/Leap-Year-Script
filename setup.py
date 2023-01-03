@@ -17,7 +17,7 @@ def get_long_description():
 
     def replace_relative_with_absolute(match):
         svg_path = match.group(0)[1:-1]
-        return ('(https://github.com/HoneyBearTech/LeapYearScript/main'
+        return ('(https://github.com/HoneyBearTech/LeapYearScript'
                 '%s?sanitize=true)' % svg_path)
 
     return re.sub(r'\(tests/golden-images/.*?\.svg\)',
@@ -65,4 +65,4 @@ setup(
     },
     license='Apache-2.0',
     packages=["LeapYearScript"],
-    url='https://github.com/HoneyBearTech/LeapYearScriptt')
+    url='https://github.com/HoneyBearTech/LeapYearScript')
