@@ -17,7 +17,7 @@ def get_long_description():
 
     def replace_relative_with_absolute(match):
         svg_path = match.group(0)[1:-1]
-        return ('(https://github.com/HoneyBearTech/LeapYearScript'
+        return ('(https://github.com/HoneyBearTech/LeapYearScript/main'
                 '%s?sanitize=true)' % svg_path)
 
     return re.sub(r'\(tests/golden-images/.*?\.svg\)',
