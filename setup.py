@@ -1,4 +1,4 @@
-"""A setup module for Leap-Year-Script."""
+"""A setup module for LeapYearScript."""
 
 import base64
 import re
@@ -17,7 +17,7 @@ def get_long_description():
 
     def replace_relative_with_absolute(match):
         svg_path = match.group(0)[1:-1]
-        return ('(https://github.com/HoneyBearTech/Leap-Year-Script/main'
+        return ('(https://github.com/HoneyBearTech/LeapYearScript/main'
                 '%s?sanitize=true)' % svg_path)
 
     return re.sub(r'\(tests/golden-images/.*?\.svg\)',
@@ -25,7 +25,7 @@ def get_long_description():
 
 
 setup(
-    name='Leap-Year-Script',
+    name='LeapYearScript',
     version='1.0.0',  # Also change in version.py.
     author='HoneyBearTech',
     author_email='sstoube@gmail.com',
@@ -44,7 +44,7 @@ setup(
     description='Simple python script to determine leap years',
     keywords="github gh-badges badge shield status",
     package_data={
-        'Leap-Year-Script': [
+        'LeapYearScript': [
             'badge-template-full.svg', 'default-widths.json', 'py.typed'
         ]
     },
@@ -64,5 +64,5 @@ setup(
         ],
     },
     license='Apache-2.0',
-    packages=["Leap-Year-Script"],
-    url='https://github.com/HoneyBearTech/Leap-Year-Script')
+    packages=["LeapYearScript"],
+    url='https://github.com/HoneyBearTech/LeapYearScriptt')
