@@ -1,17 +1,4 @@
-# Copyright 2018 The pybadge Authors
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     https://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-"""A setup module for pybadges."""
+"""A setup module for Leap-Year-Script."""
 
 import base64
 import re
@@ -30,7 +17,7 @@ def get_long_description():
 
     def replace_relative_with_absolute(match):
         svg_path = match.group(0)[1:-1]
-        return ('(https://github.com/google/pybadges/raw/master/'
+        return ('(https://github.com/HoneyBearTech/Leap-Year-Script/main'
                 '%s?sanitize=true)' % svg_path)
 
     return re.sub(r'\(tests/golden-images/.*?\.svg\)',
@@ -38,15 +25,14 @@ def get_long_description():
 
 
 setup(
-    name='pybadges',
-    version='3.0.0',  # Also change in version.py.
-    author='Brian Quinlan',
-    author_email='brian@sweetapp.com',
+    name='Leap-Year-Script',
+    version='1.0.0',  # Also change in version.py.
+    author='HoneyBearTech',
+    author_email='sstoube@gmail.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
@@ -55,11 +41,10 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Operating System :: OS Independent',
     ],
-    description='A library and command-line tool for generating Github-style ' +
-    'badges',
+    description='Simple python script to determine leap years',
     keywords="github gh-badges badge shield status",
     package_data={
-        'pybadges': [
+        'Leap-Year-Script': [
             'badge-template-full.svg', 'default-widths.json', 'py.typed'
         ]
     },
@@ -79,5 +64,5 @@ setup(
         ],
     },
     license='Apache-2.0',
-    packages=["pybadges"],
-    url='https://github.com/google/pybadges')
+    packages=["Leap-Year-Script"],
+    url='https://github.com/HoneyBearTech/Leap-Year-Script')
