@@ -15,7 +15,7 @@
 
 import unittest
 
-from Leap-Year-Script import precalculated_text_measurer
+from LeapYearScript import precalculated_text_measurer
 
 
 class TestPrecalculatedTextMeasurer(unittest.TestCase):
